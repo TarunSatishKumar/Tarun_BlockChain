@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Block Chain Technology</title>
+        <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/style2.css">
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+        <script src="app.js"></script>
+
+    </head>
+    <body ng-app="blockChainBlogApp">
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Blockchain Technology</h3>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <p><b>Contents</b></p>
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Blockchain - the new age business disruptor</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a href="#/introduction" ui-sref="introduction">An Introduction</a></li>
+                            <li><a href="#/blckchnfeatures" ui-sref="blckchnfeatures">Blockchain and its Features</a></li>
+                        </ul>
+                    </li>
+					<li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">What is Blockchain?</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#/concept" ui-sref="concept">Understanding the Concept</a></li>
+                            <li><a href="#/traditionaldbvsblckdb" ui-sref="traditionaldbvsblckdb">Blockchains vs Traditional Databases</a></li>
+                            <li><a href="#/crudvsread" ui-sref="crudvsread">CRUD vs Read & Write Operations</a></li>
+                            <li><a href="#/crudvsread" ui-sref="crudvsread">Hash Functions</a></li>
+                            <li><a href="#/mtree" ui-sref="mtree">Merkle Tree (M-Tree)</a></li>
+                            <li><a href="#/types" ui-sref="types">Types of Blockchain</a></li>
+							<li><a href="#/features" ui-sref="features">Inherent Features of Blockchain</a></li>
+							<li><a href="#/benefits" ui-sref="benefits">Benefits of Using Blockchain</a></li>
+                        </ul>
+                    </li>
+					<li>
+                        <a href="#pageSubmenu1" data-toggle="collapse" aria-expanded="false">Blockchain Use Cases</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu1">
+                            <li><a href="#/banking" ui-sref="banking">Banking and Financial Services Sector</a></li>
+                            <li><a href="#/nonfinancial" ui-sref="nonfinancial">Non-Financial Services Sector</a></li>
+                            <li><a href="#/cross" ui-sref="cross">Cross Industry Use Cases</a></li>
+							<a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false">A deep-dive into some Blockchain Use Cases</a>
+								<ul class="collapse list-unstyled" id="pageSubmenu2">
+									<li><a href="#/public" ui-sref="public"><b>1.</b> Public Blockchain: Bitcoins</a></li>
+									<li><a href="#/permissioned" ui-sref="permissioned"><b>2.</b> Permissioned Blockchain: Trade Finance Applications</a></li>
+									<li><a href="#/private" ui-sref="private"><b>3.</b> Private Blockchain: Loyalty Application</a></li>
+									<li><a href="#/government" ui-sref="government"><b>4.</b> Blockchain application by Government bodies: Honduras Land Title Registration</a></li>
+								</ul>
+                        </ul>
+                    </li>
+					<li>
+                        <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false">Blockchain in India - Experiments and Challenges Faced</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu3">
+                            <li><a href="#/exploration" ui-sref="exploration">Blockchain applications explored by Indian Players</a></li>
+                            <li><a href="#/challenges" ui-sref="challenges">Challenges Faced by early adopters - A Report From the Trenches</a></li>
+                            <li><a href="#/mitigation" ui-sref="mitigation">Mitigation Steps adopted against the Challenges Faced</a></li>
+							<li><a href="#/rbiBlockchain" ui-sref="rbiBlockchain">Reserve Bank of India's activities around Blockchain</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#/wayFwd" ui-sref="wayFwd">Way Forward</a>
+                    </li>
+					<li>
+                        <a href="#/faq" ui-sref="faq">FAQ</a>
+                    </li>
+					<li>
+                        <a href="#/aboutus" ui-sref="aboutus">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#/contact" ui-sref="contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#/intrvwqus" ui-sref="intrvwqus">BlockChain Interview Questions</a>
+                    </li>
+                </ul>
+
+                <ul class="list-unstyled CTAs">
+                    <!-- <li><a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a></li>-->
+                    <li><a href="https://en.wikipedia.org/wiki/Blockchain" class="article"><i>Blockchain Wiki Article</i></a></li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+                <ui-view></ui-view>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar, #content').toggleClass('active');
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
+        </script>
+    </body>
+</html>
