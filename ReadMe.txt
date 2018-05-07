@@ -1,1 +1,1 @@
-Learning Git . Hoping for the best      .
+Learning Git . Hoping for the best.
